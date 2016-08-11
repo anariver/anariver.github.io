@@ -1,0 +1,379 @@
+/*** uncss> filename: templates/static/css/errors.css ***/
+
+body {
+  background-color: #312450;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+}
+
+.shadow ellipse {
+  transform-origin: center center;
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+/*** uncss> filename: templates/static/css/main.css ***/
+
+/*!
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url(font-awesome.min.css);
+
+/*
+	Hyperspace by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Reset */
+
+html,
+body,
+div,
+h2,
+p,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* Box Model */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Basic */
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+
+body {
+  background: #312450;
+}
+
+/* Type */
+
+body {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16.5pt;
+  font-weight: normal;
+  line-height: 1.75;
+}
+
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 13pt;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 11pt;
+  }
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+h2 {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 0.5em 0;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+@media screen and (max-width: 736px) {
+  h2 {
+    font-size: 1.25em;
+  }
+}
+
+/* Box */
+
+/* Button */
+
+/* Features */
+
+/* Form */
+
+.select-wrapper select::-ms-expand {
+  display: none;
+}
+
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+  opacity: 1.0;
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+  opacity: 1.0;
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+  opacity: 1.0;
+}
+
+/* Icon */
+
+/* Image */
+
+/* List */
+
+/* Split */
+
+/* Wrapper */
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper > .inner {
+  padding: 5em 5em 3em 5em;
+  max-width: 100%;
+  width: 75em;
+}
+
+@media screen and (max-width: 1680px) {
+  .wrapper > .inner {
+    padding: 4em 4em 2em 4em;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper > .inner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper > .inner {
+    padding: 3em 2em 1em 2em;
+  }
+}
+
+.wrapper.fullscreen {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper.fullscreen {
+    min-height: calc(100vh - 2.5em);
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper.fullscreen {
+    padding: 2em 0;
+    min-height: 0;
+  }
+}
+
+.wrapper.fade-up > .inner {
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 1.0;
+}
+
+/* Wrapper (main) */
+
+/* Footer */
+
+/* Intro */
+
+#intro {
+  background-attachment: fixed;
+  background-image: url("../img/headfbhdsbger.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  #intro {
+    background-attachment: scroll;
+  }
+}
+
+.name {
+  display: block;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+body {
+  background-color: #312450;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+}
+.shadow ellipse {
+  transform-origin: center center;
+}
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 0 0.5em 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}

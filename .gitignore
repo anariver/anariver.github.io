@@ -1,0 +1,9 @@
+# Python compiled and virtual environment
+*.pyc
+.venv/
+
+# Secret data
+secret.json
+
+# Grunt modules
+node_modules/

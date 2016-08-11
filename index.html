@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <title>AnaDefined</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/main.css" />
+    
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#intro">Welcome</a></li>
+                    <li><a href="#two">About</a></li>
+                    <li><a href="#three">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <div class="name">
+                    <img src="/static/img/headicon.png" align="center" 
+                    style="display: block; margin: 0 auto 10px; width: 20%; height: 20%;">
+                </div>
+                <h1 style="text-align: center;">Ana Ortez-Rivera</h1>
+                <hr class="terminal">
+                <ul class="menu" align="center">
+                    <li>ANTHROPOLOGIST</li><li>GRAPHIC DESIGNER</li>
+                </ul>
+                <ul class="actions" style="text-align: center">
+                    <li><a href="/static/docs/resume.pdf" class="button">Resume</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="wrapper style3 fade-up">
+            <div class="inner">
+                <div class="features">
+                    <section>
+                        <span class="icon major fa-eye"></span>
+                        <h3>Anthropologist</h3>
+                        <p>
+                            I am a student at the University of Maryland College Park. I am majoring in Social Cultural Anthropology. I am interested in studying human cultures and societies of the past and present. Through anthropology I hope to gain a holistic and culture relative persepctive of our world. I am earning a certificate in Latin American Studies, and minor in International Development and Conflict Management. My area of focus is Latin America where I study transnationalism and the effects of globalism.
+                        </p>
+                        <ul class="actions" style="text-align: center">
+                            <li><a href="/static/docs/conflict_memo.pdf" class="button">Memo</a></li>
+                            <li><a href="/static/docs/issue_brief.pdf" class="button">Issue Brief</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <span class="icon major fa-paint-brush"></span>
+                        <h3>Graphic Desinger</h3>
+                        <p>
+                            I have 5 years experience in working with Adobe Create Suite programs such as Illustrator, Photoshop, and InDesign. I currently work as a professional Graphic Designer for the Latin American Studies Center at the University of Maryland College Park. I specialize in creating logos, flyers, and other promotional designs.
+                        </p>
+                        <ul class="actions" style="text-align: center">
+                            <li><a href="/portfolio" class="button">Portfolio</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section id="three" class="wrapper style1 fade-up">
+            <div class="inner">
+                <p>For business inquires, employment opportunities, or to just say "Hi" - look below!</p>
+                <div class="split style1">
+                    <section>
+
+                        <form action="https://formspree.io/ortezriverana@gmail.com" method="POST" class=".navbar-form">
+
+                            <div class="field half first">
+                                <label><label for="name">Name</label></label>
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" value="">
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="field half">
+                                <label><label for="email">Email</label></label>
+                                <input class="form-control" id="email" name="_replyto" placeholder="text" type="text" value="">
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="field">
+                                <label><label for="message">Message</label></label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <input type="hidden" name="_subject" value="New submission!" />
+                            <input type="hidden" name="_next" value="//anariver.github.io/404.html" />
+                            <input id="submit" name="submit" type="submit" value="Send">
+
+                        </form>
+
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+                    </section>
+
+                    <section>
+                        <ul class="contact">
+                            <li>
+                                <h3>Email</h3>
+                                <a href="javascript:void(0)" onClick="copyToClipboard('ortezriverana@gmail.com')">ortezriverana@gmail.com</a>
+                            </li>
+                            <li>
+                                <h3>Social</h3>
+                                <ul class="icons">
+                                    <li><a href="https://www.linkedin.com/in/anaor" class="fa-linkedin" style="font-size: 200%"><span class="label">LinkedIn</span></a></li>
+                                    <li><a href="https://www.facebook.com/ana.ortezrivera" class="fa-facebook" style="font-size: 200%"><span class="label">Facebook</span></a></li>
+                                    <li><a href="https://github.com/anariver" class="fa-github" style="font-size: 200%"><span class="label">GitHub</span></a></li>
+                                    <li><a href="https://dribbble.com/anariver" class="fa-dribbble" style="font-size: 200%"><span class="label">Dribbble</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu" align="center">
+                <li>&copy; 2016. All rights reserved.</li><li>Made possbile by full stack developer <a href="http://www.sabbirsphere.com">Sabbir Ahmed</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/javascripts.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+          $('#gform *').fadeOut(2000);
+          $('#gform').prepend('Your submission has been processed...');
+      });
+  </script>
+  <script type="text/javascript">
+    function copyToClipboard(text) {
+        window.prompt("Copy her email address!", text);
+    }
+</script>
+
+</body>
+</html>
