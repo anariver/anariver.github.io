@@ -23,6 +23,12 @@ def portfolio():
     return render_template('multiverse.html')
 
 
+@app.route('/thanks')
+def thanks():
+    """Thank you page"""
+    return render_template('thanks.html')
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     """Handles 404 error"""
