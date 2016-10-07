@@ -1,210 +1,179 @@
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+jQuery(function($) {
 
-(function($) {
-
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
+	//Preloader
+	var preloader = $('.preloader');
+	$(window).load(function(){
+		preloader.remove();
 	});
 
-	$(function() {
+	//#main-slider
+	var slideHeight = $(window).height();
+	$('#home-slider .item').css('height',slideHeight);
 
-		var	$window = $(window),
-			$body = $('body'),
-			$sidebar = $('#sidebar');
+	$(window).resize(function(){'use strict',
+		$('#home-slider .item').css('height',slideHeight);
+	});
+	
+	//Scroll Menu
+	$(window).on('scroll', function(){
+		if( $(window).scrollTop()>slideHeight ){
+			$('.navbar-default').addClass('navbar-fixed-top');
+		} else {
+			$('.navbar-default').removeClass('navbar-fixed-top');
+		}
+	});
+	
+	// Navigation Scroll
+	$(window).scroll(function(event) {
+		Scroll();
+	});
 
-		// Hack: Enable IE flexbox workarounds.
-			if (skel.vars.IEVersion < 12)
-				$body.addClass('is-ie');
+	$('.navbar-collapse ul li a').on('click', function() {  
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		return false;
+	});
 
-		// Disable animations/transitions until the page has loaded.
-			if (skel.canUse('transition'))
-				$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
-
-		// Forms.
-
-			// Fix: Placeholder polyfill.
-				$('form').placeholder();
-
-			// Hack: Activate non-input submits.
-				$('form').on('click', '.submit', function(event) {
-
-					// Stop propagation, default.
-						event.stopPropagation();
-						event.preventDefault();
-
-					// Submit form.
-						$(this).parents('form').submit();
-
-				});
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
-
-		// Sidebar.
-			if ($sidebar.length > 0) {
-
-				var $sidebar_a = $sidebar.find('a');
-
-				$sidebar_a
-					.addClass('scrolly')
-					.on('click', function() {
-
-						var $this = $(this);
-
-						// External link? Bail.
-							if ($this.attr('href').charAt(0) != '#')
-								return;
-
-						// Deactivate all links.
-							$sidebar_a.removeClass('active');
-
-						// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-							$this
-								.addClass('active')
-								.addClass('active-locked');
-
-					})
-					.each(function() {
-
-						var	$this = $(this),
-							id = $this.attr('href'),
-							$section = $(id);
-
-						// No section for this link? Bail.
-							if ($section.length < 1)
-								return;
-
-						// Scrollex.
-							$section.scrollex({
-								mode: 'middle',
-								top: '-20vh',
-								bottom: '-20vh',
-								initialize: function() {
-
-									// Deactivate section.
-										if (skel.canUse('transition'))
-											$section.addClass('inactive');
-
-								},
-								enter: function() {
-
-									// Activate section.
-										$section.removeClass('inactive');
-
-									// No locked links? Deactivate all links and activate this section's one.
-										if ($sidebar_a.filter('.active-locked').length == 0) {
-
-											$sidebar_a.removeClass('active');
-											$this.addClass('active');
-
-										}
-
-									// Otherwise, if this section's link is the one that's locked, unlock it.
-										else if ($this.hasClass('active-locked'))
-											$this.removeClass('active-locked');
-
-								}
-							});
-
-					});
-
+	// User define function
+	function Scroll() {
+		var contentTop      =   [];
+		var contentBottom   =   [];
+		var winTop      =   $(window).scrollTop();
+		var rangeTop    =   200;
+		var rangeBottom =   500;
+		$('.navbar-collapse').find('.scroll a').each(function(){
+			contentTop.push( $( $(this).attr('href') ).offset().top);
+			contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+		})
+		$.each( contentTop, function(i){
+			if ( winTop > contentTop[i] - rangeTop ){
+				$('.navbar-collapse li.scroll')
+				.removeClass('active')
+				.eq(i).addClass('active');			
 			}
+		})
+	};
 
-		// Scrolly.
-			$('.scrolly').scrolly({
-				speed: 1000,
-				offset: function() {
-
-					// If <=large, >small, and sidebar is present, use its height as the offset.
-						if (skel.breakpoint('large').active
-						&&	!skel.breakpoint('small').active
-						&&	$sidebar.length > 0)
-							return $sidebar.height();
-
-					return 0;
-
-				}
+	$('#tohash').on('click', function(){
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		return false;
+	});
+	
+	//Initiat WOW JS
+	new WOW().init();
+	//smoothScroll
+	smoothScroll.init();
+	
+	// Progress Bar
+	$('#about-us').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+		if (visible) {
+			$.each($('div.progress-bar'),function(){
+				$(this).css('width', $(this).attr('aria-valuetransitiongoal')+'%');
 			});
-
-		// Spotlights.
-			$('.spotlights > section')
-				.scrollex({
-					mode: 'middle',
-					top: '-10vh',
-					bottom: '-10vh',
-					initialize: function() {
-
-						// Deactivate section.
-							if (skel.canUse('transition'))
-								$(this).addClass('inactive');
-
-					},
-					enter: function() {
-
-						// Activate section.
-							$(this).removeClass('inactive');
-
-					}
-				})
-				.each(function() {
-
-					var	$this = $(this),
-						$image = $this.find('.image'),
-						$img = $image.find('img'),
-						x;
-
-					// Assign image.
-						$image.css('background-image', 'url(' + $img.attr('src') + ')');
-
-					// Set background position.
-						if (x = $img.data('position'))
-							$image.css('background-position', x);
-
-					// Hide <img>.
-						$img.hide();
-
-				});
-
-		// Features.
-			if (skel.canUse('transition'))
-				$('.features')
-					.scrollex({
-						mode: 'middle',
-						top: '-20vh',
-						bottom: '-20vh',
-						initialize: function() {
-
-							// Deactivate section.
-								$(this).addClass('inactive');
-
-						},
-						enter: function() {
-
-							// Activate section.
-								$(this).removeClass('inactive');
-
-						}
-					});
-
+			$(this).unbind('inview');
+		}
 	});
 
-})(jQuery);
+	//Countdown
+	$('#features').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+		if (visible) {
+			$(this).find('.timer').each(function () {
+				var $this = $(this);
+				$({ Counter: 0 }).animate({ Counter: $this.text() }, {
+					duration: 2000,
+					easing: 'swing',
+					step: function () {
+						$this.text(Math.ceil(this.Counter));
+					}
+				});
+			});
+			$(this).unbind('inview');
+		}
+	});
+
+	// Portfolio Single View
+	$('#portfolio').on('click','.folio-read-more',function(event){
+		event.preventDefault();
+		var link = $(this).data('single_url');
+		var full_url = '#portfolio-single-wrap',
+		parts = full_url.split("#"),
+		trgt = parts[1],
+		target_top = $("#"+trgt).offset().top;
+
+		$('html, body').animate({scrollTop:target_top}, 600);
+		$('#portfolio-single').slideUp(500, function(){
+			$(this).load(link,function(){
+				$(this).slideDown(500);
+			});
+		});
+	});
+
+	// Close Portfolio Single View
+	$('#portfolio-single-wrap').on('click', '.close-folio-item',function(event) {
+		event.preventDefault();
+		var full_url = '#portfolio',
+		parts = full_url.split("#"),
+		trgt = parts[1],
+		target_offset = $("#"+trgt).offset(),
+		target_top = target_offset.top;
+		$('html, body').animate({scrollTop:target_top}, 600);
+		$("#portfolio-single").slideUp(500);
+	});
+
+	// Contact form
+	var form = $('#main-contact-form');
+	form.submit(function(event){
+		event.preventDefault();
+		var form_status = $('<div class="form_status"></div>');
+		$.ajax({
+			url: $(this).attr('action'),
+			beforeSend: function(){
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+			}
+		}).done(function(data){
+			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+		});
+	});
+
+	//Google Map
+	var latitude = $('#google-map').data('latitude')
+	var longitude = $('#google-map').data('longitude')
+	function initialize_map() {
+		var myLatlng = new google.maps.LatLng(latitude,longitude);
+		var mapOptions = {
+			zoom: 14,
+			scrollwheel: false,
+			center: myLatlng
+		};
+		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+		var contentString = '';
+		var infowindow = new google.maps.InfoWindow({
+			content: '<div class="map-content"><ul class="address">' + $('.address').html() + '</ul></div>'
+		});
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize_map);
+
+	//Presets
+	var presets = $('.style-chooser ul li');
+
+	$('.style-chooser .toggler').on('click', function(event){
+		event.preventDefault();
+		$(this).closest('.style-chooser').toggleClass('opened');
+	});
+
+	$('.style-chooser ul li a').on('click', function(event){
+		event.preventDefault();
+		presets.removeClass('active');
+		$(this).parent().addClass('active');
+		$('#css-preset').removeAttr('href').attr('href', 'css/presets/preset' + $(this).parent().data('preset') + '.css');
+	})
+
+	
+});
+
