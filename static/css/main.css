@@ -347,7 +347,8 @@ section {
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../img/contact.jpg);
+  opacity: 0.5;
   padding: 60px 0;
 }
 
@@ -857,13 +858,9 @@ section {
   padding-bottom: 0;
 }
 
-#gmap {
-  height: 300px;
-}
-
 #contact-us {
-  background-image:url(../images/contact-bg.jpg);
-  padding-bottom: 90px; 
+  background-image:url(../img/contact.jpg);
+  padding-bottom: 90px;
 }
 
 #contact-us .heading {
@@ -917,7 +914,7 @@ ul.address {
 }
 
 #footer .footer-bottom {
-  background-color: #fff;
+  background-color: rgb(73,51,130);
   padding: 20px 0 10px;
 }
 
@@ -950,14 +947,10 @@ ul.address {
   color: #fff
 }
 
-#footer .social-icons ul li a.envelope:hover {
-  background-color: #CECB26;
-}
-
 #footer .social-icons ul li a.facebook:hover {
   background-color: #3b5999;
 }
-#footer .social-icons ul li a.twitter:hover {
+#footer .social-icons ul li a.github:hover {
   background-color: #2ac6f7;
 }
 #footer .social-icons ul li a.dribbble:hover {
@@ -965,9 +958,6 @@ ul.address {
 }
 #footer .social-icons ul li a.linkedin:hover {
   background-color: #036dc0;
-}
-#footer .social-icons ul li a.tumblr:hover {
-  background-color: #ff6b00;
 }
 
 /*Presets*/
