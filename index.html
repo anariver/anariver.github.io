@@ -41,7 +41,6 @@
             <div class="caption">
               <h1 class="animated fadeInLeftBig">AnaDefined</h1>
               <p class="animated fadeInRightBig">Portfolio | Writing Samples | Contact</p>
-              <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Enter</a>
             </div>
           </div>
           <div class="item" style="background-image: url(static/img/header2.jpg)">
@@ -54,6 +53,7 @@
         </div>
         <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
         <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        <div id="tohash"><i class="fa fa-angle-down"></i></div>
 
       </div><!--/#home-slider-->
       <div class="navbar navbar-default" role="navigation" style="background-color: rgb(73,51,130);">
@@ -68,10 +68,10 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">                 
-              <li class="scroll active"><a href="#home">Home</a></li>
-              <li class="scroll"><a href="#services">Service</a></li> 
+              <li class="scroll"><a href="#about">About</a></li> 
+              <li class="scroll"><a href="#services">Writing</a></li> 
               <li class="scroll"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll"><a href="#blog">Blog</a></li>
+              <li class="scroll"><a href="#blog">Posts</a></li>
               <li class="scroll"><a href="#contact">Contact</a></li>       
             </ul>
           </div>
@@ -79,385 +79,388 @@
       </div><!--/.navbar-->
     </header><!--/#home-->
     
-    <section id="services">
-      <div class="container">
-        <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <section id="about">
           <div class="row">
             <div class="text-center col-sm-8 col-sm-offset-2">
               <h2>About me</h2>
               <p> I am a junior Social Cultural Anthropology major, with a certifcate in Latin American Studies, and minor in International Development and Conflict Management - at the Unviversity of Maryland. I am also a professional graphic desiger for the Latin American Studies Center at UMD. I am also a researcher and tutor. Look below for my resume, writing samples and portfolio.</p>
+              <a class="btn btn-start animated fadeInUpBig" href="/static/docs/resume.pdf">Resume</a>
             </div>
-          </div> 
+          </div>
         </div>
+      </section>
+      <section id="services">
         <div class="text-center our-services">
           <div class="row">
-            <div class="col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
-              <div class="service-icon">
-                <a href="/static/docs/resume.pdf"><i class="fa fa-umbrella"></i></a>
-              </div>
-              <div class="service-info">
-                <h3>Resume</h3>
-              </div>
-            </div>
-          </div>
-          <hr width="30%">
-          <div class="row">
             <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
-              <div class="service-icon">
-                <i class="fa fa-coffee"></i>
-              </div>
+              <a href="/static/docs/research.pdf">
+                <div class="service-icon">
+                  <i class="fa fa-book"></i>
+                </div>
+              </a>
               <div class="service-info">
                 <h3>Research Paper</h3>
-                <p>10-page paper titled "Un-DACAmened</div>
-            </div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
-              <div class="service-icon">
-                <i class="fa fa-bitbucket"></i>
-              </div>
-              <div class="service-info">
-                <h3>Memo Brief</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-              </div>
-            </div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
-              <div class="service-icon">
-                <i class="fa fa-gift"></i>
-              </div>
-              <div class="service-info">
-                <h3>Issue Brief</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!--/#services-->
+                <p>10-page paper titled "Un-DACAmened"</div>
+                </div>
 
-    <section id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>Graphic Design Portfolio</h2>
-            <p>Check out</p>
-          </div>
-        </div> 
-      </div>
-      <div class="container-fluid">
-
-        <div class="row">
-
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h1.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+                  <a href="/static/docs/memo.pdf">
+                    <div class="service-icon">
+                      <i class="fa fa-bolt"></i>
                     </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </a>
+                  <div class="service-info">
+                    <h3>Memo Brief</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+                  <a href="/static/docs/issue.pdf">
+                    <div class="service-icon">
+                      <i class="fa fa-lightbulb-o"></i>
                     </div>
+                  </a>
+                  <div class="service-info">
+                    <h3>Issue Brief</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </section><!--/#services-->
 
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h2.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
-                    </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h1.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
-                    </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h2.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
-                    </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h1.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
-                    </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h2.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
-                    </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h1.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
-                    </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
-              <div class="folio-image">
-                <img class="img-responsive" src="/static/img/h2.png" alt="">
-              </div>
-              <div class="overlay">
-                <div class="overlay-content">
-                  <div class="overlay-text">
-                    <div class="folio-info">
-                      <h3>Time Hours</h3>
-                      <p>Design, Photography</p>
-                    </div>
-                    <div class="folio-overview">
-                      <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      <div id="portfolio-single-wrap">
-        <div id="portfolio-single">
-        </div>
-      </div><!-- /#portfolio-single-wrap -->
-    </section><!--/#portfolio-->
-
-    <section id="blog">
-      <div class="container">
-        <div class="row">
-          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-            <h2>Online Posts</h2>
-            <p>Here are a few articles in which my work is featured.</p>
-          </div>         </div>
-        <div class="blog-posts">
-          <div class="row">
-            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <div class="post-thumb">
-                <a href="#"><img class="img-responsive" src="/static/img/post1.png" alt=""></a> 
-              </div>
-              <div class="entry-header">
-                <h3><a href="https://anth.umd.edu/news/ana-ortez-rivera-presented-her-mcnair-summer-research-internship">Ana Ortez-Rivera presented her McNair Summer Research Internship</a></h3>
-                <span class="date">July 9, 2016</span>
-              </div>
-              <div class="entry-content">
-                <p>Ana Ortez-Rivera, an undergraduate anthropology major, presented her McNair Summer Research Internship this summer. Her project, which was supervised by Dr. Getrich, was focused on the “Health and Well-being of Newly 'DACA-mented' Immigrant Young Adults in Maryland.” Great job, Ana!</p>
-              </div>
-            </div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-              <div class="post-thumb">
-                <a href="#"><img class="img-responsive" src="/static/img/post2.png" alt=""></a> 
-              </div>
-              <div class="entry-header">
-                <h3><a href="http://avancegw.org/page/13/">REACH Internship Empowers Youth</a></h3>
-                <span class="date">August 18, 2015</span>
-              </div>
-              <div class="entry-content">
-                <p>Youth Manager Ana Ortez-Rivera (above, left) accompanied Paola and Marlon to schools, grocery stores, and community events to observe how water and sugary drinks were being presented to the public and spread the word about the REACH Project. Both interns came away from their experiences with a newfound appreciation for the importance of nutrition as well as greater confidence in themselves as community advocates. </p>
-              </div>
-            </div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-              <div class="post-thumb">
-                <a href="#"><img class="img-responsive" src="/static/img/post3.png" alt=""></a> 
-              </div>
-              <div class="entry-header">
-                <h3><a href="https://medium.com/terrapin-hackers/the-hackathon-experience-b4971fd40032#.7fmpaika9">The Hackathon Experience: How to hack your world</a></h3>
-                <span class="date">April 24, 2016</span>
-              </div>
-              <div class="entry-content">
-                <p>On April 1st, 2016, I walk across the campus of Princeton University with my sleeping bag and laptop in hand towards HackPrinceton. Now, why would I — an anthropology major (the study of humans, past and present), who has no experience in coding — want to participate in a 36 hour hackathon? My answer is — why not? ...</p>
-              </div>
-            </div>
-          </div>        
-        </div>
-      </div>
-    </section><!--/#blog-->
-
-    <section id="contact">
-      <div id="contact-us" class="parallax">
-        <div class="container">
-          <div class="row">
-            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <h2>Contact</h2>
-              <p>For business inquires, employment opportunities, or to just say "Hi" - look below!</p>
-            </div>
-          </div>
-          <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <section id="portfolio">
+          <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <form id="main-contact-form" name="contact-form" method="post" action="#">
-                  <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+              <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <h2>Graphic Design Portfolio</h2>
+                <p>Check out</p>
+              </div>
+            </div> 
+          </div>
+          <div class="container-fluid">
+
+            <div class="row">
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h1.png" alt="">
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h2.png" alt="">
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h1.png" alt="">
                   </div>
-                  <div class="form-group">
-                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
-                  </div>                        
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Send Now</button>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </form>   
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h2.png" alt="">
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h1.png" alt="">
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h2.png" alt="">
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h1.png" alt="">
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
+                  <div class="folio-image">
+                    <img class="img-responsive" src="/static/img/h2.png" alt="">
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <div class="overlay-text">
+                        <div class="folio-info">
+                          <h3>Time Hours</h3>
+                          <p>Design, Photography</p>
+                        </div>
+                        <div class="folio-overview">
+                          <span class="folio-expand"><a href="/static/img/h2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div id="portfolio-single-wrap">
+            <div id="portfolio-single">
+            </div>
+          </div><!-- /#portfolio-single-wrap -->
+        </section><!--/#portfolio-->
+
+        <section id="blog">
+          <div class="container">
+            <div class="row">
+              <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+                <h2>Online Posts</h2>
+                <p>Here are a few articles in which my work is featured.</p>
+              </div>         </div>
+              <div class="blog-posts">
+                <div class="row">
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    <div class="post-thumb">
+                      <a href="#"><img class="img-responsive" src="/static/img/post1.png" alt=""></a> 
+                    </div>
+                    <div class="entry-header">
+                      <h3><a href="https://anth.umd.edu/news/ana-ortez-rivera-presented-her-mcnair-summer-research-internship">Ana Ortez-Rivera presented her McNair Summer Research Internship</a></h3>
+                      <span class="date">July 9, 2016</span>
+                    </div>
+                    <div class="entry-content">
+                      <p>Ana Ortez-Rivera, an undergraduate anthropology major, presented her McNair Summer Research Internship this summer. Her project, which was supervised by Dr. Getrich, was focused on the “Health and Well-being of Newly 'DACA-mented' Immigrant Young Adults in Maryland.” Great job, Ana!</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="post-thumb">
+                      <a href="#"><img class="img-responsive" src="/static/img/post2.png" alt=""></a> 
+                    </div>
+                    <div class="entry-header">
+                      <h3><a href="http://avancegw.org/page/13/">REACH Internship Empowers Youth</a></h3>
+                      <span class="date">August 18, 2015</span>
+                    </div>
+                    <div class="entry-content">
+                      <p>Youth Manager Ana Ortez-Rivera (above, left) accompanied Paola and Marlon to schools, grocery stores, and community events to observe how water and sugary drinks were being presented to the public and spread the word about the REACH Project. Both interns came away from their experiences with a newfound appreciation for the importance of nutrition as well as greater confidence in themselves as community advocates. </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="post-thumb">
+                      <a href="#"><img class="img-responsive" src="/static/img/post3.png" alt=""></a> 
+                    </div>
+                    <div class="entry-header">
+                      <h3><a href="https://medium.com/terrapin-hackers/the-hackathon-experience-b4971fd40032#.7fmpaika9">The Hackathon Experience: How to hack your world</a></h3>
+                      <span class="date">April 24, 2016</span>
+                    </div>
+                    <div class="entry-content">
+                      <p>On April 1st, 2016, I walk across the campus of Princeton University with my sleeping bag and laptop in hand towards HackPrinceton. Now, why would I — an anthropology major (the study of humans, past and present), who has no experience in coding — want to participate in a 36 hour hackathon? My answer is — why not? ...</p>
+                    </div>
+                  </div>
+                </div>        
               </div>
             </div>
-          </div>
-        </div>
-      </div>        
-    </section><!--/#contact-->
-    <footer id="footer">
-      <div class="footer-top" style="background-color: rgb(73,51,130);">
-        <div class="container text-center">
-          <div class="social-icons">
-            <ul>
-              <li><a class="github" href="https://github.com/anariver"><i class="fa fa-github"></i></a></li> 
-              <li><a class="dribbble" href="https://dribbble.com/anariver"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="facebook" href="https://www.facebook.com/ana.ortezrivera"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="linkedin" href="https://www.linkedin.com/in/anaor"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p>&copy; 2016 Oxygen Theme.</p>
+          </section><!--/#blog-->
+
+          <section id="contact">
+            <div id="contact-us" class="parallax">
+              <div class="container">
+                <div class="row">
+                  <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <h2>Contact</h2>
+                    <p>For business inquires, employment opportunities, or to just say "Hi" - look below!</p>
+                  </div>
+                </div>
+                <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <form id="main-contact-form" name="contact-form" method="POST" action="https://formspree.io/ortezriverana@gmail.com">
+                        <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <input type="text" id="name" name="name" class="form-control" placeholder="Who are you?" required="required">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <input type="email" id="email" name="_replyto" class="form-control" placeholder="you@your-domain.com" required="required">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required="required">
+                        </div>
+                        <div class="form-group">
+                          <textarea name="message" id="message" name="message" class="form-control" rows="4" placeholder="How can I help you?" required="required"></textarea>
+                        </div>
+
+                        <input type="hidden" name="_subject" value="New submission!" />
+                        <input type="hidden" name="_next" value="//anariver.github.io/thanks.html" />
+                        <div class="form-group">
+                          <button id="submit" name="submit" type="submit" class="btn btn-primary btn-lg btn-block">Send Now</button>
+                        </div>
+                      </form>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>        
+          </section><!--/#contact-->
+          <footer id="footer">
+            <div class="footer-top" style="background-color: rgb(73,51,130);">
+              <div class="container text-center">
+                <div class="social-icons">
+                  <ul>
+                    <li><a class="github" href="https://github.com/anariver"><i class="fa fa-github"></i></a></li> 
+                    <li><a class="dribbble" href="https://dribbble.com/anariver"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/ana.ortezrivera"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/anaor"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6">
-              <p class="pull-right">Designed by <a href="http://www.themeum.com/">Ana</a></p>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>&copy; 2016 Oxygen Theme.</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <p class="pull-right">Designed by <a href="http://www.themeum.com/">Ana</a></p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </footer>
+
+          <div class="style-chooser">
           </div>
-        </div>
-      </div>
-    </footer>
 
-    <div class="style-chooser">
-    </div>
+          <script type="text/javascript" src="/static/js/jquery.js"></script>
+          <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+          <script type="text/javascript" src="/static/js/jquery.inview.min.js"></script>
+          <script type="text/javascript" src="/static/js/wow.min.js"></script>
+          <script type="text/javascript" src="/static/js/mousescroll.js"></script>
+          <script type="text/javascript" src="/static/js/smoothscroll.js"></script>
+          <script type="text/javascript" src="/static/js/jquery.countTo.js"></script>
+          <script type="text/javascript" src="/static/js/lightbox.min.js"></script>
+          <script type="text/javascript" src="/static/js/main.js"></script>
 
-    <script type="text/javascript" src="/static/js/jquery.js"></script>
-    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="/static/js/jquery.inview.min.js"></script>
-    <script type="text/javascript" src="/static/js/wow.min.js"></script>
-    <script type="text/javascript" src="/static/js/mousescroll.js"></script>
-    <script type="text/javascript" src="/static/js/smoothscroll.js"></script>
-    <script type="text/javascript" src="/static/js/jquery.countTo.js"></script>
-    <script type="text/javascript" src="/static/js/lightbox.min.js"></script>
-    <script type="text/javascript" src="/static/js/main.js"></script>
-
-  </body>
-  </html>
+        </body>
+        </html>

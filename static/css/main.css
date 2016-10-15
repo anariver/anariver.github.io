@@ -306,6 +306,7 @@ section {
 **************************/
 
 .service-icon {
+  background-color: rgb(73,51,130);
   border-radius: 4px;
   color: #fff;
   display: inline-block;
@@ -347,7 +348,7 @@ section {
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../img/contact.jpg);
+  background-image: url(../img/contact.png);
   opacity: 0.5;
   padding: 60px 0;
 }
@@ -859,7 +860,7 @@ section {
 }
 
 #contact-us {
-  background-image:url(../img/contact.jpg);
+  background-image:url(../img/contact.png);
   padding-bottom: 90px;
 }
 
