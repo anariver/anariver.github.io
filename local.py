@@ -17,13 +17,7 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/portfolio')
-def portfolio():
-    """Portfolio page"""
-    return render_template('multiverse.html')
-
-
-@app.route('/thanks')
+@app.route('/thanks.html')
 def thanks():
     """Thank you page"""
     return render_template('thanks.html')
@@ -42,4 +36,4 @@ def server_error(e):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True, port=8000)

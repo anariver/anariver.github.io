@@ -7,16 +7,16 @@ class ContactForm(Form):
     email = TextField("Email",
                       [validators.Required(
                           "Please enter your email address"
-                          ),
-                        validators.Email(
+                      ),
+                          validators.Email(
                           "We both know that's not your email"
-                          )
-                        ]
-        )
+                      )
+                      ]
+                      )
     subject = TextField("Subject", [
         validators.Required("Please enter a subject")]
-        )
+    )
     message = TextAreaField(
         "Message", [validators.Required("Please enter a message")]
-        )
+    )
     submit = SubmitField("Send")
