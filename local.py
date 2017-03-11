@@ -14,25 +14,25 @@ app.jinja_loader = FileSystemLoader(dirname(abspath(__file__)))
 @app.route('/')
 def home():
     """Returns home"""
-    return render_template('index.html')
+    return render_template("index.html")
 
 
-@app.route('/thanks.html')
+@app.route("/thanks.html")
 def thanks():
     """Thank you page"""
-    return render_template('thanks.html')
+    return render_template("thanks.html")
 
 
 @app.errorhandler(404)
 def page_not_found(e):
     """Handles 404 error"""
-    return render_template('404.html'), 404
+    return render_template("404.html"), 404
 
 
 @app.errorhandler(500)
 def server_error(e):
     """Handles 500 error"""
-    return render_template('500.html'), 500
+    return render_template("500.html"), 500
 
 
 if __name__ == "__main__":
