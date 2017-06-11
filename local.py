@@ -36,4 +36,28 @@ def server_error(e):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+
+    import argparse
+
+    # manually backspace for formatting help menu
+    menu_pad = '\b' * 4
+
+    parser = argparse.ArgumentParser(
+        description="Script to run website locally",
+        add_help=False
+    )
+
+    # arguments for details on program
+    parser._positionals.title = 'Parameters'
+    parser.add_argument(
+        '-h', '--help', action='help',
+        default=argparse.SUPPRESS,
+        help=menu_pad + '| Show this help message and exit'
+    )
+
+    # positional arguments
+    parser.add_argument('port', help=menu_pad + '| Port of server')
+
+    # parse arguments to pass into function
+    args = parser.parse_args()
+    app.run(port=int(args.port))
