@@ -1,98 +1,854 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>AnaDefined</title>
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/animate.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="/static/css/lightbox.css" rel="stylesheet">
+  <link href="/static/css/main.css" rel="stylesheet">
+  <link href="/static/css/purple.css" rel="stylesheet">
+  <link href="/static/css/responsive.css" rel="stylesheet">
 
-    <head>
-        <style type="text/css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<!--/head-->
 
-            div.cat {
-                width: 400px;
-                height:400px;
-                background-image:url("https://media.giphy.com/media/W8krmZSDxPIfm/giphy.gif");
-                position:fixed;
-            }
+<body style="color: black;">
 
-            div.feliz {
-                width: 400px;
-                height:400px;
-                background-image:url("https://media.giphy.com/media/3o7qDRvhnf03wPzP5C/giphy.gif");
-                position:fixed;
-            }
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
 
-            div.cat2 {
-                width: 400px;
-                height:400px;
-                background-image:url("https://media.giphy.com/media/l4KhS0BOFBhU2SYIU/giphy.gif");
-                position:fixed;
-            }
+  <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(static/img/header.jpg)">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Ana<span style="color: black;">Defined</span></h1>
+            <p class="animated fadeInRightBig">Student | Researcher | Graphic Designer</p>
+          </div>
+        </div>
+      </div>
+      <div id="tohash">
+        <i class="fa fa-angle-down"></i>
+      </div>
 
-            div.computer {
-                width: 400px;
-                height:400px;
-                background-image:url("https://media.giphy.com/media/3wSjFK914tZeM/giphy.gif");
-                position:fixed;
-            }
+    </div><!--/#home-slider-->
 
-            div.computer2 {
-                width: 400px;
-                height:400px;
-                background-image:url("https://media.giphy.com/media/ytwDCGipNV2sTbndUA/giphy.gif");
-                position:fixed;
-            }
+    <div class="navbar navbar-default" role="navigation" style="background-color: rgb(73,51,130);">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll"><a href="#about">About</a></li> 
+            <li class="scroll"><a href="#services">Writing</a></li> 
+            <li class="scroll"><a href="#portfolio">Portfolio</a></li>
+            <li class="scroll"><a href="#blog">Posts</a></li>
+            <li class="scroll"><a href="#contact">Contact</a></li>       
+          </ul>
+        </div>
+      </div>
+    </div><!--/.navbar-->
 
-            body {
-                background: url("/static/cake.jpg") no-repeat fixed;
-            }
+  </header><!--/#home-->
 
-        </style>
+<section id="services">
+  <div class="container">
 
-    </head>
+    <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+        <div class="text-center col-sm-8 col-sm-offset-2">
 
-    <body>
+          <h2>About me</h2>
+          <p>
+            What defines me? Well… a lot of things. Check out below some of my writing samples, graphic design portfolio, and online posts!
+          </p>
 
-        <div class="cat"></div>
-        <div class="cat2"></div>
-        <div class="feliz"></div>
-        <div class="computer"></div>
-        <div class="computer2"></div>
-        <audio controls autoplay hidden>
-            <source src="/static/audio.wav">
-        </audio>
+          <div class="form-group" style="margin-left: 35%; margin-right: 35%;">
+            <button onclick='location.href="/static/docs/resume.pdf"' class="btn btn-primary btn-lg btn-block">Resume</button>
+          </div>
 
-    </body>
+        </div>
+      </div> 
+    </div>
 
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf-8" async defer>
-        $(document).ready(function() {
-            animateDiv(".cat");
-            animateDiv(".cat2");
-            animateDiv(".feliz");
-            animateDiv(".computer");
-            animateDiv(".computer2");
-        });
+    <div class="text-center our-services">
 
-        function makeNewPosition() {
-        // Get viewport dimensions (remove the dimension of the div)
-        var h = $(window).height() - 50;
-        var w = $(window).width() - 50;
+      <div class="row">
 
-        var nh = Math.floor(Math.random() * h);
-        var nw = Math.floor(Math.random() * w);
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+            <div class="service-icon">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+          <div class="service-info">
+            <h3>Senior Student at The University of Maryland</h3>
+          </div>
+        </div>
 
-        return [nh, nw];
-        }
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <div class="service-icon">
+              <i class="fa fa-search"></i>
+            </div>
+          <div class="service-info">
+            <h3>Researcher of Deferred Action for Childhood Arrivals</h3>
+          </div>
+        </div>
 
-        function animateDiv(myclass) {
-            var newq = makeNewPosition();
-            $(myclass).animate(
-                { top: newq[0], left: newq[1] },
-                500,
-                function() { animateDiv(myclass); }
-            );
-        }
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+            <div class="service-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+          <div class="service-info">
+            <h3>Professional Graphic Designer</h3>
+          </div>
+        </div>
 
-    </script>
+      </div>
 
+      <br>
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center container col-sm-6 col-sm-offset-3">
+
+            <img class="img-responsive" src="/static/img/about.jpg" alt="">
+
+          </div>
+        </div> 
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+
+          <a href="/static/docs/research.pdf">
+            <div class="service-icon">
+              <i class="fa fa-book"></i>
+            </div>
+          </a>
+
+          <div class="service-info">
+            <h3>Research</h3>
+            <p>
+              Research paper written and published for the Ronald E. McNair Postbaccalaureate program 2016-2017. Research apart of a large project with Dr. Christina Getrich.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+
+          <a href="/static/docs/memo.pdf">
+            <div class="service-icon">
+              <i class="fa fa-bolt"></i>
+            </div>
+          </a>
+
+          <div class="service-info">
+            <h3>Memo</h3>
+            <p>
+              Mock memo written in the voice of Latin American Youth Center, to propose a program called “Mi Vida, Mi Voz.” Written for advanced english professional course in fall of 2015.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+
+          <a href="/static/docs/brief.pdf">
+            <div class="service-icon">
+              <i class="fa fa-lightbulb-o"></i>
+            </div>
+          </a>
+
+          <div class="service-info">
+            <h3>Brief</h3>
+            <p>
+              Memo brief about the issue of girls education in Mali. Written for government capstone project in the fall of 2015. Capstone completed with Chemonics in Washington D.C.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section><!--/#services-->
+
+
+
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <h2>Graphic Design Portfolio</h2>
+      </div>
+    </div> 
+  </div>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/1_gem.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Girls' Education in Mali</h3>
+                  <p>Logo for capstone project that outlines a program to keep attendance rates up in rural Mali. Capstone project was in collaboration with Chemonics at Washington D.C.</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/1_gem.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/2_dog.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>HackUMBC</h3>
+                  <p>Winning logo design for the University of Maryland - Baltimore County’s Fall 2017 hackathon. Design was featured on shirts, stickers, and hand bags.</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/2_dog.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/3_close.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>CloseCrawl</h3>
+                  <p>Logo for a web app to crawl and mine data through foreclosure cases in the city of Baltimore. Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/3_close.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/4_data.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Datato</h3>
+                  <p>Logo for a Django web app to make feature selection, exploratory analysis, grid searching and other data analytical tools for non-technical users. Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/4_data.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/5_terps.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>UMD Shell Design</h3>
+                  <p>Design inspired by the University of Maryland shell logo.</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/5_terps.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/6_bird.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>LASC</h3>
+                  <p>Logo for the Latin American Studies Center at the University of Maryland.</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/6_bird.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/7_hy1.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Kaleidoscope Design</h3>
+                  <p>Design inspired by a kaleidoscope.</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/7_hy1.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/8_hy2.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Unity Design</h3>
+                  <p>Design, Photography</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/8_hy2.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/9_hy3.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Sun Roundtable Design</h3>
+                  <p>Design, Photography</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/9_hy3.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/10_hy4.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Geometric Design</h3>
+                  <p>Design, Photography</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/10_hy4.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/11_tag.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Tag Team</h3>
+                  <p>Logo for web app that help teams find the perfect team members in hackathons</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/11_tag.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/12_sloth.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>SlothSure</h3>
+                  <p>Logo for an embedded Arduino modules onto wearable suspenders that alerts when the user is slouching and stores the data to track the posture. Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/12_sloth.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/13_sirwm.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>SirWorm</h3>
+                  <p>Logo for a web application that parses through school syllabuses and generates grade calculators, calendars, course details, course descriptions, etc. Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/13_sirwm.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/14_study.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Study Guy</h3>
+                  <p>Logo for a web app that generated study guides</p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/14_study.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/15_grant.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>grantd</h3>
+                  <p>Logo for a cross-compiled, office-friendly, departmental, monthly financial report generator. Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/15_grant.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/16_hbang.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>HeadBangingSquirrel</h3>
+                  <p>Logo used for <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/16_hbang.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/17_major.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>MajorWay</h3>
+                  <p>Logo for a data mining web application that uses natural language processing methods and intersection graphs on user inputted school curriculum to generate statistics on the content of the discipline. Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/17_major.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/18_plant.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Plan-It</h3>
+                  <p>Logo for a web application that parses PDF schedules and routines and automatically generates a calendar of events out of them. Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/18_plant.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <div class="folio-image">
+            <img class="img-responsive" src="/static/img/19_holy.png" alt="">
+          </div>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <div class="folio-info">
+                  <h3>Holy Grade</h3>
+                  <p>Logo for a web application that takes in PDF syllabuses (syllabi?) and scans for weights of assignment categories; so you don't have to make spreadsheets to keep track! Found on <a href="http://www.sabbirsphere.com">sabbirsphere.com</a></p>
+                </div>
+                <div class="folio-overview">
+                  <span class="folio-expand"><a href="/static/img/19_holy.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div id="portfolio-single-wrap">
+    <div id="portfolio-single">
+    </div>
+  </div><!-- /#portfolio-single-wrap -->
+</section><!--/#portfolio-->
+
+<section id="blog">
+  <div class="container">
+
+    <div class="row">
+      <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+        <h2>Online Posts</h2>
+        <p>
+          Here are a few articles in which my work is featured.
+        </p>
+      </div>         
+    </div>
+
+    <div class="blog-posts">
+
+      <div class="row">
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="post-thumb">
+            <a href="#"><img class="img-responsive" src="/static/img/p1.jpg" alt=""></a> 
+          </div>
+          <div class="entry-header">
+            <h3>
+              <a href="https://www.facebook.com/umdanth/photos/a.544975655576966.1073741828.335408026533731/1445996535474869/?type=3&theater">
+                UMD Department of Anthropology Facebook Page
+              </a>
+            </h3>
+            <span class="date">April 27, 2017</span>
+          </div>
+          <div class="entry-content">
+            <p>
+              Ana Ortez-Rivera, undergraduate anthropology major, presented on the Health and Well-Being of Newly "DACAmented" Immigrant Youth Adults in Maryland project at Undergraduate Research Day.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="post-thumb">
+            <a href="#"><img class="img-responsive" src="/static/img/p2.jpg" alt=""></a> 
+          </div>
+          <div class="entry-header">
+            <h3>
+              <a href="https://www.facebook.com/umdanth/photos/a.544975655576966.1073741828.335408026533731/1406134239461099/?type=3&theater">
+                UMD Department of Anthropology Facebook Page
+              </a>
+            </h3>
+            <span class="date">March 30, 2017</span>
+          </div>
+          <div class="entry-content">
+            <p>
+              The DACA project team representing at Society for Applied Anthropology (SfAA)!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="post-thumb">
+            <a href="#"><img class="img-responsive" src="/static/img/p3.jpg" alt=""></a> 
+          </div>
+          <div class="entry-header">
+            <h3>
+              <a href="http://www.scholarships.umd.edu/announcements/PPIA2017.html">
+                Four UMD Juniors Named Public Policy and International Affairs Fellows
+              </a>
+            </h3>
+            <span class="date">March 16, 2017</span>
+          </div>
+          <div class="entry-content">
+            <p>
+              College Park, Maryland - Four University of Maryland juniors have been named 2017 Public Policy and International Affairs (PPIA) Fellows. From a pool of nearly 600 applicants from across the nation, Adwoa Boateng, Fasika Delessa, Ana Ortez-Rivera, and Kendra Pryor are among the 100 new PPIA Fellows who will attend Junior Summer Institutes (JSI) this year.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <div class="post-thumb">
+            <a href="#"><img class="img-responsive" src="/static/img/p4.jpeg" alt=""></a> 
+          </div>
+          <div class="entry-header">
+            <h3>
+              <a href="https://medium.com/terrapin-hackers/the-hackathon-experience-b4971fd40032#.7fmpaika9">
+                The Hackathon Experience
+              </a>
+            </h3>
+            <span class="date">April 24, 2016</span>
+          </div>
+          <div class="entry-content">
+            <p>
+              On April 1st, 2016, I walk across the campus of Princeton University with my sleeping bag and laptop in hand towards HackPrinceton. Now, why would I — an anthropology major (the study of humans, past and present), who has no experience in coding — want to participate in a 36 hour hackathon? My answer is — why not? …
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="post-thumb">
+            <a href="#"><img class="img-responsive" src="/static/img/p5.png" alt=""></a> 
+          </div>
+          <div class="entry-header">
+            <h3>
+              <a href="https://anth.umd.edu/news/ana-ortez-rivera-presented-her-mcnair-summer-research-internship">
+                Ana Ortez-Rivera presented her McNair Summer Research Internship
+              </a>
+            </h3>
+            <span class="date">July 9, 2015</span>
+          </div>
+          <div class="entry-content">
+            <p>
+              Ana Ortez-Rivera, an undergraduate anthropology major, presented her McNair Summer Research Internship this summer. Her project, which was supervised by Dr. Getrich, was focused on the “Health and Well-being of Newly 'DACA-mented' Immigrant Young Adults in Maryland.” Great job, Ana!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+          <div class="post-thumb">
+            <a href="#"><img class="img-responsive" src="/static/img/p6.png" alt=""></a> 
+          </div>
+          <div class="entry-header">
+            <h3>
+              <a href="http://avancegw.org/page/15/">
+                REACH empowers youth
+              </a>
+            </h3>
+            <span class="date">August 18, 2015</span>
+          </div>
+          <div class="entry-content">
+            <p>
+              Youth Manager Ana Ortez-Rivera (above, left) accompanied Paola and Marlon to schools, grocery stores, and community events to observe how water and sugary drinks were being presented to the public and spread the word about the REACH Project. Both interns came away from their experiences with a newfound appreciation for the importance of nutrition as well as greater confidence in themselves as community advocates.
+            </p>
+          </div>
+        </div>
+      </div>        
+    </div>
+
+  </div>
+</section><!--/#blog-->
+
+<section id="contact">
+  <div id="contact-us" class="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <h2>Contact</h2>
+          <p>For business inquires, employment opportunities, or to just say "Hi" - look below!</p>
+        </div>
+      </div>
+      <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <form role="form" name="contact-form" action="https://formspree.io/ortezriverana@gmail.com"  method="POST">
+              <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Who are you?" required="required">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="email" id="email" name="_replyto" class="form-control" placeholder="you@your-domain.com" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required="required">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" name="message" class="form-control" rows="4" placeholder="How can I help you?" required="required"></textarea>
+              </div>
+
+              <input type="hidden" name="_subject" value="New submission!" />
+              <div class="form-group">
+                <button type="submit" name="submit" class="btn btn-primary btn-lg btn-block">Send Now</button>
+              </div>
+            </form>   
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!--/#contact-->
+
+<footer id="footer">
+  <div class="footer-top" style="background-color: rgb(73,51,130);">
+    <div class="container text-center">
+      <div class="social-icons">
+        <ul>
+          <li><a class="github" href="https://github.com/anariver"><i class="fa fa-github"></i></a></li> 
+          <li><a class="dribbble" href="https://dribbble.com/anariver"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="facebook" href="https://www.facebook.com/ana.ortezrivera"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/anaor"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom" style="color: #fff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>&copy 2017. All rights reserved.</p>
+        </div>
+        <div class="col-sm-6">
+          <p class="pull-right">Made possible by the full stack developer <a href="http://www.sabbirsphere.com" style="color: #000;">Sabbir</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="style-chooser">
+</div>
+
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.inview.min.js"></script>
+<script type="text/javascript" src="/static/js/wow.min.js"></script>
+<script type="text/javascript" src="/static/js/mousescroll.js"></script>
+<script type="text/javascript" src="/static/js/smoothscroll.js"></script>
+<script type="text/javascript" src="/static/js/jquery.countTo.js"></script>
+<script type="text/javascript" src="/static/js/lightbox.min.js"></script>
+<script type="text/javascript" src="/static/js/main.js"></script>
+
+</body>
 </html>
