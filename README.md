@@ -1,2 +1,2 @@
-# AnaDefined
-This repository contains the source code behind my personal website, [AnaDefined](http://anadefined.com/).
+# SabbirSphere
+Source code for my personal website [sabbirsphere.com](http://www.sabbirsphere.com)
