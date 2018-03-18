@@ -2,7 +2,6 @@
 layout: post
 title:  "The Hackathon Experience"
 datestr:   "April 24, 2016"
-excerpt: "On April 1st, 2016, I walk across the campus of Princeton University with my sleeping bag and laptop in hand towards HackPrinceton. Now, why would I - an anthropology major (the study of humans, past and present), who has no experience in coding - want to participate in a 36 hour hackathon? My answer is - why not? ..."
 read-time: true
 tag:
 - capstone
