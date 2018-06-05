@@ -6,11 +6,21 @@ tags:
 feature: ../assets/img/header.jpg
 ---
 
-Graduating as a computer engineer with a minor in applied mathematics on May 2018. Even though I reserve my right to say "trust me, I'm an engineer!", I consider myself as a well-rounded computer scientist.
+Ana Ortez-Rivera is a proud Salvadoran-American born and raised in Washington
+D.C. She later moved to Maryland where she attended Eleanor Roosevelt High
+School and the University of Maryland - College Park. She graduated from UMD in
+May 2018 with a Bachelor's of Science in Social-Cultural Anthropology,
+certificate in Latin American Studies, and minor in International Development
+and Conflict Management.
 
-I have over 4 years of experience in full stack software development, from high-level web development to low-level embedded systems. My areas of interest include data mining, web scraping, audio analysis and natural language processing. I am also interested in hardware development with Arduino and FPGAs.
+Ana's areas of interest include research with immigrants populations,
+development, education policy, community engagement, and digital design.
 
+She is passionate about fighting for immigrant and refugee rights and related
+issues. Ana dedicates her career to public service to make an impact in her
+community.
 
+Ana also enjoys long naps and her grandma's mashed potatoes.
 
 <!-- ## Preview
 
@@ -20,9 +30,3 @@ I have over 4 years of experience in full stack software development, from high-
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
  -->
-
-## Resumes
-
-My resumes are written in LaTex. I have two versions of my resume for the different hats I like to wear.
-
-<a href="{{ site.url }}/assets/docs/resume.pdf" class="btn btn-primary">Resume</a>

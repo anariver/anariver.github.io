@@ -1,8 +1,6 @@
 ---
-layout: post
-title:  "Designs"
-tag:
-- designs
+layout: page
+title: Designs
 ---
 
 {% capture images %}
@@ -24,9 +22,6 @@ tag:
     {{site.url}}/assets/img/7_hy1.png
     {{site.url}}/assets/img/8_hy2.png
     {{site.url}}/assets/img/9_hy3.png
-    {{site.url}}/assets/img/close-crawl.png
-    {{site.url}}/assets/img/datato.png
-    {{site.url}}/assets/img/grantd.png
     {{site.url}}/assets/img/heatreplay.png
     {{site.url}}/assets/img/holygrade.png
     {{site.url}}/assets/img/major_way.png
@@ -34,8 +29,6 @@ tag:
     {{site.url}}/assets/img/10_hy4.png
     {{site.url}}/assets/img/tidyall.png
     {{site.url}}/assets/img/11_tag.png
-    {{site.url}}/assets/img/planit.png
-    {{site.url}}/assets/img/sirworm.png
     {{site.url}}/assets/img/gfau.png
 {% endcapture %}
 {% include gallery images=images caption="Designs" cols=3 %}
