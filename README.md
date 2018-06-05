@@ -1,2 +1,2 @@
 # AnaDefined
-Source code for my personal website [anadefined.com](http://www.anadefined.com)
+Source code for my personal website [anadefined.com](https://www.anadefined.com)
