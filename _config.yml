@@ -37,5 +37,12 @@ gems:
 jekyll-mentions:
     base_url: https://github.com
 
+include: ["_pages"]
+
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
