@@ -2,25 +2,13 @@
 layout: page
 title: About Me
 tags:
-- about
+  - about
 feature: ../assets/img/header.jpg
 ---
 
-Ana Ortez-Rivera is a proud Salvadoran-American born and raised in Washington
-D.C. She later moved to Maryland where she attended Eleanor Roosevelt High
-School and the University of Maryland - College Park. She graduated from UMD in
-May 2018 with a Bachelor's of Science in Social-Cultural Anthropology,
-certificate in Latin American Studies, and minor in International Development
-and Conflict Management.
+Ana Ortez-Rivera was born and raised in Washington D.C. and the proud daughter of Salvadorean immigrants. She is a 2018 graduate of the University of Maryland - College Park, where she studies Social-Cultural Anthropology, Latin American Studies, and International Development and Conflict Resolution. Her passion lies in education policy and therefore decided to work at the Next Step Public Charter School as a school counselor/advisor. In this role, Ana helped GED and ESL students navigate college and career options. She served low-income, minority, and immigrant students who faced barriers and extraordinary challenges in their educational journey. After facing local and state challenges that created barriers for her student’s educational attainment beyond the GED, Ana was motivated to earn her MPP.
 
-Ana's areas of interest include research with immigrants populations,
-development, education policy, community engagement, and digital design.
-
-She is passionate about fighting for immigrant and refugee rights and related
-issues. Ana dedicates her career to public service to make an impact in her
-community.
-
-Ana also enjoys long naps and her grandma's mashed potatoes.
+She loves taking long naps and finding free food on campus.
 
 <!-- ## Preview
 
