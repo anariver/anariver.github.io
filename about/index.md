@@ -6,9 +6,9 @@ tags:
 feature: ../assets/img/header.jpg
 ---
 
-Ana Ortez-Rivera was born and raised in Washington D.C. and the proud daughter of Salvadorean immigrants. She is a 2018 graduate of the University of Maryland - College Park, where she studies Social-Cultural Anthropology, Latin American Studies, and International Development and Conflict Resolution. Her passion lies in education policy and therefore decided to work at the Next Step Public Charter School as a school counselor/advisor. In this role, Ana helped GED and ESL students navigate college and career options. She served low-income, minority, and immigrant students who faced barriers and extraordinary challenges in their educational journey. After facing local and state challenges that created barriers for her student’s educational attainment beyond the GED, Ana was motivated to earn her MPP.
+Ana Ortez-Rivera was born and raised in Washington D.C. and the proud daughter of Salvadorean immigrants. She is a 2018 graduate of the University of Maryland - College Park, where she studied Social-Cultural Anthropology, Latin American Studies, and International Development and Conflict Resolution. Her passion lies in education policy, and after graduation, she decided to work at the Next Step Public Charter School as a school counselor/advisor. In this role, Ana helped GED and ESL students navigate college and career options. She served low-income, minority, and immigrant students who faced difficulties and extraordinary challenges in their educational journey. After braving local and state challenges that created barriers for her students' educational attainment beyond the GED, Ana was motivated to earn her MPP.
 
-She loves taking long naps and finding free food on campus.
+She loves taking long naps and finding free food on campus!
 
 <!-- ## Preview
 
