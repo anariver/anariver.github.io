@@ -1,30 +1,30 @@
 # Site
-title:              Ana Ortez-Rivera
-description:        "Student | Researcher | Graphic Designer"
-reading_time:       false
-logo:               'assets/img/logo.png'
+title: Ana Ortez-Rivera
+description: "Student | Researcher | Graphic Designer"
+reading_time: false
+logo: "assets/img/logo.jpg"
 # background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-url:                https://www.ana-or.me
+tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
+locale: en_US
+url: https://www.ana-or.me
 
 # Jekyll
-permalink:          /:title/
-markdown:           kramdown
-highlighter:        rouge
+permalink: /:title/
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 sass:
-  sass_dir:         _sass
-  style:            compressed
+  sass_dir: _sass
+  style: compressed
 
-github-url:         anariver
-facebook:           ana.ortezrivera
-linkedin:           anaor
+github-url: anariver
+facebook: ana.ortezrivera
+linkedin: anaor
 
 # Gems
 gems:
@@ -34,12 +34,26 @@ gems:
   - jekyll-gist
 
 jekyll-mentions:
-    base_url: https://github.com
+  base_url: https://github.com
 
 include: ["_pages"]
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+exclude:
+  [
+    README.md,
+    Gemfile,
+    Gemfile.lock,
+    node_modules,
+    gulpfile.js,
+    package.json,
+    _site,
+    src,
+    vendor,
+    CNAME,
+    LICENSE,
+    Rakefile,
+  ]
 
 collections:
   pages:
