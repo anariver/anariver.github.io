@@ -1,6 +1,7 @@
 # Site
 title: Ana Ortez-Rivera
-description: "Student | Researcher | Graphic Designer"
+description: "HKS MPP’23 Candidate<br>BRACE FOR IMPACT
+"
 reading_time: false
 logo: "assets/img/logo.jpg"
 # background:         'assets/img/placeholder-big.jpg'
@@ -22,7 +23,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-github-url: anariver
 instagram: ana.ortezrivera
 linkedin: anaor
 
